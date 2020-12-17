@@ -146,7 +146,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imcResult"
-                app:srcCompat="@drawable/ic_people" />
+                app:srcCompat="@drawable/ic_people"
+                app:tint="@color/black" />
 
             <ImageView
                 android:id="@+id/underweightSquare"

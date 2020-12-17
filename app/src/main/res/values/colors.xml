@@ -10,4 +10,10 @@
     <color name="gray">#8F9090</color>
     <color name="white">#FFFFFFFF</color>
     <color name="blue">#4B84F1</color>
+    <color name="orange">#F1914B</color>
+    <color name="green">#4EF14B</color>
+    <color name="red">#F14B4B</color>
+    <color name="pink">#F14BE2</color>
+    <color name="yellow">#F1EE4B</color>
+    <color name="lilac">#BA4BF1</color>
 </resources>

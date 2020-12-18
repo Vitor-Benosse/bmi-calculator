@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         binding.go4allButton.setOnClickListener {
             changeColorTimestamp()
         }
+
     }
 
     @RequiresApi(Build.VERSION_CODES.M)
@@ -32,18 +33,24 @@ class MainActivity : AppCompatActivity() {
         if(weightInput.isNotEmpty() && heightInput.isNotEmpty()) {
             val calculateBmi = weightInput.toFloat() / (heightInput.toFloat() * heightInput.toFloat())
             val bmi = calculateBmi * 10000
+            binding.bmiResult.apply {
+                text = bmi.toInt().toString()
+            }
             binding.peopleIcon.apply {
                 when {
-                    bmi <= 18.9 -> setColorFilter(getColor(R.color.orange))
-
+                    bmi.toInt() <= 18 -> setColorFilter(getColor(R.color.orange))
                     bmi.toInt() in 19..24 -> setColorFilter(getColor(R.color.green))
-
                     else -> setColorFilter(getColor(R.color.red))
                 }
             }
         } else {
             Toast.makeText(applicationContext, "Please enter all the values! ", Toast.LENGTH_SHORT).show()
         }
+    }
+
+    private fun getTimestamp(): Int {
+        val timestamp = System.currentTimeMillis()/1000
+        return timestamp.toString().takeLast(1).toInt()
     }
 
     @RequiresApi(Build.VERSION_CODES.M)
@@ -62,10 +69,5 @@ class MainActivity : AppCompatActivity() {
                 9 -> setColorFilter(getColor(R.color.lilac))
             }
         }
-    }
-
-    private fun getTimestamp(): Int {
-        val timestamp = System.currentTimeMillis()/1000
-        return timestamp.toString().takeLast(1).toInt()
     }
 }

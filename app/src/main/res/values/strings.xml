@@ -5,7 +5,7 @@
     <string name="altura_cm">Altura (cm)</string>
     <string name="peso_kg">Peso (kg)</string>
     <string name="imc">IMC</string>
-    <string name="imc_default_value">0.0</string>
+    <string name="bmi_default_value">0.0</string>
     <string name="abaixo">Abaixo</string>
     <string name="normal">Normal</string>
     <string name="acima">Acima</string>

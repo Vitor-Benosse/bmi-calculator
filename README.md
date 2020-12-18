@@ -25,7 +25,7 @@ In this project I tried to simplify all, using the most simple formula and divid
    * Normal 		 : 19 < bmi < 24
    * Overweight  : bmi  > 25
 
-Here is the link to the layout developed in figma: <a href="https://www.figma.com/file/uHS9PVWw4Su3pklVSx2Fui/IMC-Calculator-4all?node-id=0%3A1">Figma Layout</a>
+Here is the link to the layout developed in figma: <a href="https://www.figma.com/file/uHS9PVWw4Su3pklVSx2Fui/IMC-Calculator-4all?node-id=0%3A1" target="_blank">Figma Layout</a>
 
 <img src="empty-print.jfif">
 <img src="normal-bmi-print.jfif">

@@ -74,7 +74,8 @@
                 android:inputType="number"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/heightText" />
+                app:layout_constraintTop_toBottomOf="@+id/heightText"
+                android:maxLength="3" />
 
             <TextView
                 android:id="@+id/weightText"
@@ -103,7 +104,8 @@
                 android:inputType="number"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/weightText" />
+                app:layout_constraintTop_toBottomOf="@+id/weightText"
+                android:maxLength="3" />
 
             <TextView
                 android:id="@+id/imcText"

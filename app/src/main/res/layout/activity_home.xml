@@ -10,12 +10,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:context=".MainActivity">
+        tools:context=".home.view.HomeActivity">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:context=".MainActivity">
+            tools:context=".home.view.HomeActivity">
 
             <TextView
                 android:id="@+id/appName"
@@ -230,6 +230,7 @@
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="35dp"
                 android:layout_marginEnd="24dp"
+                android:layout_marginBottom="24dp"
                 android:background="@drawable/custom_button_filled"
                 android:fontFamily="@font/roboto"
                 android:text="@string/calcular"
@@ -238,39 +239,10 @@
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/normalText" />
-
-            <TextView
-                android:id="@+id/orText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:text="@string/ou"
-                app:layout_constraintBottom_toTopOf="@+id/go4allButton"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/calculateButton" />
-
-            <Button
-                android:id="@+id/go4allButton"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginEnd="24dp"
-                android:layout_marginBottom="48dp"
-                android:background="@drawable/custom_button_unfilled"
-                android:fontFamily="@font/roboto"
-                android:text="@string/go4all"
-                android:textAllCaps="false"
-                android:textColor="@color/smooth_black"
-                android:textSize="16sp"
-                app:backgroundTint="@null"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
